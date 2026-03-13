@@ -1,15 +1,16 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
-import Game from './features/game/Game'
 import Login from './features/login/Login'
+import Signup from './features/signup/SignUp'
+
 
 function App() {
 
   return (
     <>
       <Routes>
-        <Route path='/' element={<Game />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
       </Routes>
     </>
   )
